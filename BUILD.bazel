@@ -1,0 +1,5 @@
+load("rule.bzl", "sample")
+
+toolchain_type(name = "toolchain_type")
+
+sample(name = "sample")
