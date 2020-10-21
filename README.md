@@ -14,6 +14,7 @@ FAILED: Build did NOT complete successfully (0 packages loaded)
 
 This build fails because there is no applicable toolchain, and shows a useful
 error message:
+
 ```
 $ bazel build //:sample
 ERROR: While resolving toolchains for target //:sample: no matching toolchains found for types //:toolchain_type
@@ -27,6 +28,7 @@ FAILED: Build did NOT complete successfully
 ```
 
 This build however, fails without any type of useful error:
+
 ```
 $ bazel build //:sample --extra_toolchains=@broken//...
 INFO: Build option --extra_toolchains has changed, discarding analysis cache.
